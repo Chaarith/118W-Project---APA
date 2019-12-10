@@ -1,0 +1,203 @@
+<!--THIS PAGE WAS DONE BY CHARITH PETE & ALEX CHONG -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="HandheldFriendly" content="true">
+<title>Amazon Preservation Association</title>
+<link href="css/styles.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css">
+
+</head>
+
+<body>
+
+<!-- NAV BAR. -->
+<header>
+	<img src="img/logo.png" alt="APA logo" class="logo">
+	<nav>
+		<ul>
+			<li class="current"><a href="index.html">Home</a></li>
+			<li class="dropdown"><a>About Us</a>
+				<ul class="dropdown-content">
+					<li><a href="mission.html">Our Mission</a></li>
+					<li><a href="team.html">Our Team</a></li>
+				</ul>
+			</li>
+			<li><a href="work.html">Our Work</a></li>
+			<li class="dropdown"><a>Media</a>
+				<ul class="dropdown-content">
+					<li><a href="maps.html">Maps</a></li>
+					<li><a href="news.html">News</a></li>
+					<li><a href="videos.html">Videos</a></li>
+				</ul>
+			</li>
+			<li><a href="donate.html">Donate</a></li>
+		</ul>
+	</nav>
+</header>
+
+<div class="banner">
+</div>
+
+<!-- DONATION FORM -->
+<form method = "post">
+  <div class="payment">
+    <h3><strong>Donate Now</strong></h3>
+    <p>No matter the amount you donate, it's always greatly appreciated and ensures the future protection of the Amazon Rainforest as well as all those that reside in and around it.</p>
+    <br>
+    <br>
+    <div class="form" method="post">
+      <div class="donation space icon-relative">
+        <label class="label"><strong>Donation Amount:</strong></label>
+        <input type="number" class="input" id="dono" placeholder="amount" required size="5">
+        <i class="fas fa-dollar-sign"></i>
+      </div>
+      <div class="donation space icon-relative">
+        <label class="label"><strong>Comment:</strong></label>
+        <textarea maxlength="200" name="comment" id="comment" placeholder="Leave a Comment (Optional)"></textarea>
+      </div>
+      <div class="fcard space icon-relative">
+        <label class="label"><strong>First Name:</strong></label>
+        <input type="text" class="input" id="firstname" placeholder="enter first name" required size="20">
+        <i class="fas fa-user-circle"></i>
+      </div>
+      <div class="lcard space icon-relative">
+        <label class="label"><strong>Last Name:</strong></label>
+        <input type="text" class="input" id="lastname" placeholder="enter last name" required size="20">
+      </div>
+      <div class="email space icon-relative">
+        <label class="label"><strong>Email Address:</strong></label>
+        <input type="email" class="input" id="email" placeholder="enter email address" required size="30">
+        <i class="fas fa-envelope"></i>
+      </div>
+      <div class="phone space icon-relative">
+        <label class="label"><strong>Phone Number:</strong></label>
+        <input type="number" class="input" id="phonenum" placeholder="enter phone number">
+        <i class="fas fa-mobile-alt"></i>
+      </div>
+      <div class="card space icon-relative">
+        <label class="label"><strong>Card Number:</strong></label>
+        <input type="text" class="input" id="ccinfo" data-mask="0000 0000 0000 0000" placeholder="enter card number" minlength="19" maxlength="19" required>
+        <i class="fas fa-credit-card"></i>
+      </div>
+      <div class="card-grp space">
+        <div class="card-item icon-relative">
+          <label class="label"><strong>Expiry Date:</strong></label>
+          <input type="text" name="expiry-data" class="input"  placeholder="00 / 00" minlength="7" maxlength="7" required>
+          <i class="fas fa-calendar-alt"></i>
+        </div>
+        <div class="card-item icon-relative">
+          <label class="label"><strong>CVV:</strong></label>
+          <input type="text" class="input" data-mask="0000" placeholder="0000" minlength="3" maxlength="4" required>
+          <i class="fas fa-lock"></i>
+        </div>
+      </div>
+
+        <button class="btn" value="Submit" onclick="send()"><strong>Submit Donation</strong></button>
+
+
+    </div>
+  </div>
+</form>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js'></script>
+
+
+
+<p><strong>OR USE</strong></p>
+
+
+<img src="img/paypal-logo.png" alt="PP Logo" width=12%>
+
+
+<!-- START PAYPAL FORM -->
+
+<form target="_blank" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_donations" />
+<input type="hidden" name="business" value="charith.pete@hotmail.com" />
+<input type="hidden" name="item_name" value="Amazon Preservation Association" />
+<input type="hidden" name="currency_code" value="USD" />
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+<img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+</form>
+
+
+<!-- END PAYPAL FORM -->
+
+<p><br></p>
+
+
+<div class="donate-footer">
+	<p>By clicking the above button you agree to have your debit or credit card or bank account charged by Amazon Preservation Association Team.
+	</p>
+</div>
+
+<p><br></p>
+
+<!-- FOOTER -->
+<footer>
+	<div class="container">
+		<div class="col-3">
+			<p>What started as a small project
+			has <br>now flourished into something
+			great. <br> Everyday we focus on ways to help <br>
+			those affected by the disasters in <br> and around the Amazon Rainforest.
+			<br> Join us now! Help save the Amazon. </p>
+		</div>
+
+		<div class="col-1">
+			<ul class="unstyled-list">
+				<li><strong><font color="orange">QUICK LINKS</font></strong></li>
+				<li><a href="index.html" style="color:white">Home</a></li>
+				<li><a href="mission.html" style="color:white">Our Mission</a></li>
+				<li><a href="team.html" style="color:white">Our Team</a></li>
+				<li><a href="work.html" style="color:white">Our Work</a></li>
+				<li><a href="maps.html" style="color:white">Maps</a></li>
+				<li><a href="news.html" style="color:white">News</a></li>
+				<li><a href="videos.html" style="color:white">Videos</a></li>
+				<li><a href="donate.html" style="color:white">Donate</a></li>
+
+			</ul>
+		</div>
+
+		<div class="col-1">
+			<ul class="unstyled-list">
+				<li><strong><font color="orange">CONTACT US</font></strong></li>
+				<li>1 Washington Sq </li>
+				<li>San Jose, CA 95192  </li>
+				<li>(888) 888-8888  </li>
+				<li>info@saverainforest.com </li>
+			</ul>
+		</div>
+
+	</div>
+</footer>
+
+<script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-database.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyAS135K9i_2U5SqMAJR19w9P9RiOCtKzBA",
+    authDomain: "preservation-21c26.firebaseapp.com",
+    databaseURL: "https://preservation-21c26.firebaseio.com",
+    projectId: "preservation-21c26",
+    storageBucket: "preservation-21c26.appspot.com",
+    messagingSenderId: "243903689819",
+    appId: "1:243903689819:web:ff7258623deada6ca67b7e"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+<script src="donate.js"></script>
+
+
+</body>
+</html>

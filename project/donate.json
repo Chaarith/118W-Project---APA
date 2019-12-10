@@ -1,0 +1,17 @@
+{
+    "details": [{
+        "donationamount": "10",
+        "comment": "Save the Amazon!",
+        "firstname": "Charith",
+        "lastname": "Pete",
+        "email": "charith.pete@sjsu.edu",
+        "phonenumber": "123-456-7890"
+    }, {
+        "donationamount": "20",
+        "comment": "Amazon is awesome!",
+        "firstname": "Justin",
+        "lastname": "Chen",
+        "email": "justin.chen@sjsu.edu",
+        "phonenumber": "098-765-4321"
+    }]
+}
